@@ -28,6 +28,7 @@ dependencies:
   - bioconductor-annotationdbi=1.52.0=r40_0
   - bioconductor-annotationfilter=1.14.0=r40_0
   - bioconductor-annotationhub=2.22.0=r40_0
+  - bioconductor-apeglm=1.12.0=r40h5f743cb_0
   - bioconductor-biobase=2.50.0=r40h037d062_0
   - bioconductor-biocfilecache=1.14.0=r40_0
   - bioconductor-biocgenerics=0.36.0=r40_0
@@ -115,11 +116,14 @@ dependencies:
   - pcre2=10.36=h032f7d1_1
   - pixman=0.40.0=h36c2ea0_0
   - pthread-stubs=0.4=h36c2ea0_1001
+  - r-ashr=2.2_47=r40h0357c0b_1
   - r-askpass=1.1=r40hcdcec82_2
   - r-assertthat=0.2.1=r40h6115d3f_2
   - r-backports=1.2.1=r40hcfec24a_0
   - r-base=4.0.3=hd23ff56_6
   - r-base64enc=0.1_3=r40hcdcec82_1004
+  - r-bbmle=1.0.23.1=r40h6115d3f_1
+  - r-bdsmatrix=1.3_4=r40hcdcec82_1
   - r-bh=1.75.0_0=r40hc72bb7e_0
   - r-biocmanager=1.30.10=r40h6115d3f_1
   - r-bit=4.0.4=r40hcdcec82_0
@@ -134,6 +138,7 @@ dependencies:
   - r-cellranger=1.1.0=r40h6115d3f_1003
   - r-cli=2.3.1=r40hc72bb7e_0
   - r-clipr=0.7.1=r40h142f84f_0
+  - r-coda=0.19_4=r40h142f84f_0
   - r-colorspace=2.0_0=r40h9e2df91_0
   - r-commonmark=1.7=r40hcdcec82_1002
   - r-cpp11=0.2.6=r40hc72bb7e_0
@@ -149,6 +154,8 @@ dependencies:
   - r-dplyr=1.0.4=r40h03ef668_0
   - r-dt=0.17=r40hc72bb7e_0
   - r-ellipsis=0.3.1=r40hcdcec82_0
+  - r-emdbook=1.3.12=r40h6115d3f_1
+  - r-etrunct=0.1=r40_1002
   - r-evaluate=0.14=r40h6115d3f_2
   - r-fansi=0.4.2=r40hcfec24a_0
   - r-farver=2.0.3=r40h0357c0b_1
@@ -169,6 +176,8 @@ dependencies:
   - r-htmlwidgets=1.5.3=r40hc72bb7e_0
   - r-httpuv=1.5.5=r40h03ef668_0
   - r-httr=1.4.2=r40h6115d3f_0
+  - r-invgamma=1.1=r40h6115d3f_1
+  - r-irlba=2.3.3=r40h7fa42b6_3
   - r-isoband=0.2.3=r40h03ef668_0
   - r-jquerylib=0.1.3=r40hc72bb7e_0
   - r-jsonlite=1.7.2=r40hcfec24a_0
@@ -188,9 +197,12 @@ dependencies:
   - r-memoise=2.0.0=r40hc72bb7e_0
   - r-mgcv=1.8_34=r40he454529_0
   - r-mime=0.10=r40hcfec24a_0
+  - r-mixsqp=0.3_43=r40hfbb317b_1
   - r-modelr=0.1.8=r40h6115d3f_0
   - r-munsell=0.5.0=r40h6115d3f_1003
+  - r-mvtnorm=1.1_1=r40h580db52_1
   - r-nlme=3.1_152=r40h859d828_0
+  - r-numderiv=2016.8_1.1=r40h6115d3f_3
   - r-openssl=1.4.3=r40he5c4762_0
   - r-pillar=1.5.0=r40hc72bb7e_0
   - r-pkgbuild=1.2.0=r40hc72bb7e_0
@@ -209,6 +221,9 @@ dependencies:
   - r-rappdirs=0.3.3=r40hcfec24a_0
   - r-rcolorbrewer=1.1_2=r40h6115d3f_1003
   - r-rcpp=1.0.6=r40h03ef668_0
+  - r-rcpparmadillo=0.10.2.2.0=r40h306847c_0
+  - r-rcppeigen=0.3.3.9.1=r40h306847c_0
+  - r-rcppnumerical=0.4_0=r40h0357c0b_1
   - r-rcurl=1.98_1.2=r40hcdcec82_1
   - r-readr=1.4.0=r40h1b71b39_0
   - r-readxl=1.3.1=r40hde08347_4
@@ -228,6 +243,7 @@ dependencies:
   - r-shiny=1.6.0=r40hc72bb7e_0
   - r-snow=0.4_3=r40h6115d3f_1002
   - r-sourcetools=0.1.7=r40he1b5a44_1002
+  - r-squarem=2021.1=r40hc72bb7e_0
   - r-stringi=1.5.3=r40hcabe038_1
   - r-stringr=1.4.0=r40h6115d3f_2
   - r-sys=3.4=r40hcdcec82_0
@@ -237,6 +253,7 @@ dependencies:
   - r-tidyselect=1.1.0=r40h6115d3f_0
   - r-tidyverse=1.3.0=r40h6115d3f_2
   - r-tinytex=0.29=r40hc72bb7e_0
+  - r-truncnorm=1.0_8=r40hcdcec82_1002
   - r-utf8=1.1.4=r40hcdcec82_1003
   - r-vctrs=0.3.6=r40hcfec24a_0
   - r-viridislite=0.3.0=r40h6115d3f_1003
@@ -266,8 +283,5 @@ dependencies:
   - xorg-xextproto=7.3.0=h7f98852_1002
   - xorg-xproto=7.0.31=h7f98852_1007
   - xz=5.2.5=h516909a_1
-  - zlib=1.2.11=h516909a_1010
-  - zstd=1.4.8=ha95c52a_1
-prefix: /home/mira/miniconda3/envs/r
-
+  - zlib=1.2.11=h516909a_101
 ```
