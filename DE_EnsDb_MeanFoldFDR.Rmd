@@ -371,6 +371,7 @@ comparing.barplot.fn <- function(df, yval, title, ytitle) {
        aes(x=Sample, y=yval, group=Aligner, fill=Aligner)) +
     geom_bar(stat="identity", position="dodge") +
     theme_bw() +
+    theme(axis.text.x=element_text(angle=90, vjust=0.5, hjust=1)) +
     ggtitle(title) + 
     ylab(ytitle)
 
@@ -1079,7 +1080,7 @@ comp.scatter.fn <- function(df,
                   mapping=aes(x=Inf, y=Inf), 
                   vjust=2, hjust=1.2, color="black") +
 geom_abline(slope=1, size=0.5, linetype="dashed", color="black") + 
-ggtitle(paste("Comparison in", metric, "\n(with R-squared)")) + scale_color_gradient(low="blue", high="red") +
+ggtitle(paste("Comparison in", metric, "\n(with R-Squared)")) + scale_color_gradient(low="blue", high="red") +
 xlab(xlab) + 
 ylab(ylab)
 
