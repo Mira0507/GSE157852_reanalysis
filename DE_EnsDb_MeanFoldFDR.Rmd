@@ -1219,17 +1219,19 @@ boxplot1.fn <- function(metric, ylog=F) {
 
     df <- subset(lfcTable.rela, Metric == metric)
 
-p <- ggplot(df, 
-            aes(x= Aligner, y=Value, fill=Aligner, label=ANOVA.pval)) + 
-           geom_boxplot(alpha=0.5) + 
-           theme_bw() + 
-           xlab("Aligner") + 
-           ylab("Value") + 
-           theme(strip.text.x=element_text(size=10)) +
-           ggtitle(paste("Aligner Comparison in", 
-                         metric,
-                         "\n(P-value from Two-Tailed ANOVA Test)")) + ylab(metric) + 
-           geom_text(size=5, mapping=aes(x=Inf, y=Inf), vjust=2, hjust=1.2)
+    df$Aligner <- factor(df$Aligner, levels=Aligners)
+
+    p <- ggplot(df, 
+                aes(x= Aligner, y=Value, fill=Aligner, label=ANOVA.pval)) + 
+               geom_boxplot(alpha=0.5) + 
+               theme_bw() + 
+               xlab("Aligner") + 
+               ylab("Value") + 
+               theme(strip.text.x=element_text(size=10)) +
+               ggtitle(paste("Aligner Comparison in", 
+                             metric,
+                             "\n(P-value from Two-Tailed ANOVA Test)")) + ylab(metric) + 
+               geom_text(size=5, mapping=aes(x=Inf, y=Inf), vjust=2, hjust=1.2)
 
 if (ylog) {
 
