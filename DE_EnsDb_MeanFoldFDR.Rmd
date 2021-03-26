@@ -780,7 +780,7 @@ geom_density(size=1) +
 theme_bw() + 
 geom_vline(xintercept=c(-1, 1), 
            linetype="dashed", color="black", size=1) + 
-ggtitle(paste("Distribution of log2FoldChange Values by Aligner (FDR <", alpha)) +
+ggtitle(paste0("Distribution of log2FoldChange Values by Aligner (FDR < ", alpha, ")")) +
 ylab("Count") + 
 xlim(-10, 10)    # Change xlim by datatype
 
